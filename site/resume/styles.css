@@ -1,0 +1,13 @@
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card img {
+  border: 1px dashed gray;
+}
+
+a[target], a[data-id] {
+  white-space: nowrap;
+}
