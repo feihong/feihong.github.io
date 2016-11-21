@@ -65,12 +65,12 @@ h2 Talks
 
   ### [Scraping from the Web: An Overview That Does Not Contain Too Much Cussing](https://www.youtube.com/watch?v=jMgRUI7V_mk), February 2013
 
-  I discuss how we implemented various scrapers at EveryBlock. I give an overview of the various tools we employed. I also give some advice for managing a collection  of constantly-failing scraper programs.
+  I discuss how we implemented various scrapers at EveryBlock. I give an overview of the various tools we employed. I also give some advice for managing a collection  of constantly-failing scraper programs. <a href='#' data-id='bWk0P7w2aZg' data-embed-type='youtube'>[View video]</a>
 
-  ### [Ultimate Language Shootout IV: CoffeeScript](https://www.youtube.com/watch?v=oH_cEl2SMr8), June 2013
+  ### [Ultimate Language Shootout IV: CoffeeScript](https://github.com/feihong/coffeescript-talk), June 2013
 
-  Introduction to CoffeeScript language for Ultimate Language Shootout IV. I offer  some comparisons with Python and demonstrate how to debug at the source level inside Chrome dev tools.
+  Introduction to CoffeeScript language for Ultimate Language Shootout IV. I offer  some comparisons with Python and demonstrate how to debug at the source level inside Chrome dev tools. <a href='#' data-id='oH_cEl2SMr8' data-embed-type='youtube'>[View video]</a>
 
   ### [Secrets of the Framework Creators](https://github.com/feihong/framework-tutorial), March 2008
 
-  A PyCon tutorial that covers advanced language features that commonly appear in the codebases of popular Python frameworks. We go over the syntax and usage of frame hacks, magic methods, decorators, and metaclasses. There are examples and exercises for tutorial participants.
+  A PyCon tutorial that covers advanced language features that commonly appear in the codebases of popular Python frameworks. We go over the syntax and usage of frame hacks, magic methods, decorators, and metaclasses. There are examples and exercises for tutorial participants. <a href='http://feihong.github.io/framework-tutorial/' target='_blank'>[View tutorial]</a>
