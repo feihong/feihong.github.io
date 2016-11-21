@@ -39,3 +39,45 @@ def render(tmpl_file, **kwargs):
 @task
 def serve(ctx):
     app.run(debug=True, port=8000)
+
+
+@task
+def build(ctx):
+    clean(ctx)
+    for src in Path('site').rglob('*?.*'):
+        dest = Path('build') / src.relative_to('site')
+        dest = copy_or_generate(src, dest)
+        print(dest)
+
+
+@task
+def clean(ctx):
+    if Path('build').is_dir():
+        ctx.run('rm -rf build/*')
+
+
+@task
+def serve_build(ctx):
+    ctx.run('cd build; python -m http.server', pty=True)
+
+
+@task
+def publish(ctx):
+    build(ctx)
+    run('ghp-import -n -p build')
+
+
+def copy_or_generate(src, dest):
+    import shutil
+    if not dest.exists():
+        dest.parent.mkdir(parents=True, exist_ok=True)
+
+    if src.suffix == '.plim' and not src.name.startswith('_'):
+        dest_html = dest.with_suffix('.html')
+        with dest_html.open('w') as fp:
+            html = render(str(src.relative_to('site')))
+            fp.write(html)
+        return dest_html
+    else:
+        shutil.copy(str(src), str(dest))
+        return dest
