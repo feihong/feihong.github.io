@@ -57,11 +57,11 @@ h2 Talks
 
   ### [Using Realm with Swift](https://github.com/feihong/realm-talk), March 2015
 
-  Realm is a mobile database for iOS and Android. On iOS, it's meant to be a replacement for Core Data, offering a similar API but with better performance and a smaller footprint.
+  Realm is a mobile database for iOS and Android. On iOS, it's meant to be a replacement for Core Data, offering a similar API but with better performance and a smaller footprint. <a href='#' data-id='19ec1d6e7549481492f77a805a0cb4aa' data-embed-type='speakerdeck'>[View slides]</a>
 
-  ### [Asynchronous I/O in Python 3](https://www.youtube.com/watch?v=jMgRUI7V_mk), July 2013
+  ### [Asynchronous I/O in Python 3](https://github.com/feihong/tulip-talk), July 2013
 
-  An overview of PEP 3156 and basic usage of the reference implementation, codenamed Tulip. This is now known as [asyncio](https://docs.python.org/3/library/asyncio.html), and is currently in the Python 3 standard library.
+  An overview of PEP 3156 and basic usage of the reference implementation, codenamed Tulip. This is now known as [asyncio](https://docs.python.org/3/library/asyncio.html), and is currently in the Python 3 standard library. <a href='#' data-id='jMgRUI7V_mk' data-embed-type='youtube'>[View video]</a>
 
   ### [Scraping from the Web: An Overview That Does Not Contain Too Much Cussing](https://www.youtube.com/watch?v=jMgRUI7V_mk), February 2013
 
