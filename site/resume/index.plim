@@ -1,0 +1,9 @@
+-inherit /_base.plim
+
+-block title
+  Feihong Hsu
+
+.container
+  h1 = title()
+
+  p resume
