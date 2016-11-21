@@ -3,7 +3,39 @@
 -block title
   Feihong Hsu
 
-.container
-  h1 = title()
+-block extrahead
+  link rel='stylesheet' href='styles.css'
 
-  p resume
+h1 = title()
+
+ul
+  li
+    Chicago, IL
+  li
+    a href='https://github.com/feihong' GitHub
+  li
+    a href='http://omegafeihong.tumblr.com/' Blog
+  li
+    a href='http://feihonghsu.com' Web site
+  li
+    a href='http://www.linkedin.com/in/feihonghsu' LinkedIn
+
+h2 Who
+
+p
+  -md
+    I am a freelance Django developer with more than a decade of Python experience and a strong foundation in JavaScript programming. Besides fullstack web development, my specialties are web scraping and geospatial programming. My hobbies include reading comics, learning Chinese, drawing, and dragon boat racing.
+
+h2 Experience
+
+.experience
+  h3 Freelance, June 2013 to present
+  p I have helped a number of clients with their Python and JavaScript web development needs. On the odd occasion I've also done iOS work in Objective-C.
+
+.experience
+  h3 `a href='http://everyblock.com' EveryBlock`, September 2011 to Februrary 2013
+  p I worked on a large Django site with a strong geographic focus. We had a PostgreSQL backend and used Celery for tasks. In particular I focused on scraping and presentation of external datasets in various formats including web pages, structured files, APIs, and even PDFs. I also helped create an internal system for the timely detection of scraping errors.
+
+.experience
+  h3 `a href='http://leapfrogonline.com/' Leapfrog Online`, May 2008 to September 2011
+  p I worked on a large Pylons app for managing ad campaigns, which had a complex GUI written in ExtJS and jQuery. Later I switched to developing a large Django app for executing cable promotions. My unique contribution was introducing frontend tests to the development process, using QUnit and PunkyBrowster.
