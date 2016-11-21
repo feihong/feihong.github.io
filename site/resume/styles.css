@@ -7,3 +7,7 @@ h3 {
 .card img {
   border: 1px dashed gray;
 }
+
+a[target], a[data-id] {
+  white-space: nowrap;
+}
