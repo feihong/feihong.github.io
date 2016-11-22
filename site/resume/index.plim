@@ -77,30 +77,30 @@ h2 Talks
 
 h2 Open Source Projects
 
-.card
-  .card-image
-    img src='mobile-app-tutorial.png'
-  .card-content
-    span.card-title
-      a href='https://github.com/ChickTech/mobile-app-tutorial' Mobile App Tutorial
+h3.oss
+  a href='https://github.com/ChickTech/mobile-app-tutorial' Mobile App Tutorial
+.row
+  .col.s12.m6
+    img.responsive-img src='mobile-app-tutorial-small.png'
+  .col.s12.m6
     -md
       [App Inventor](http://appinventor.mit.edu/) tutorial made for the [ChickTech Mobile App Workshop](http://chicktech.github.io/mobile-app-tutorial/). Shows high school students how to create basic Android apps that make use of the camera, GPS, networking, QR code scanning. There is even a bonus chapter on setting up a basic web app on [PythonAnywhere](https://www.pythonanywhere.com/). <a href='http://chicktech.github.io/mobile-app-tutorial/' target='_blank'>[View tutorial]</a>
 
-.card
-  .card-image
-    img src='chirp-command-center.png'
-  .card-content
-    span.card-title
-      a href='https://github.com/chirpradio/command-center/' CHIRP Radio Command Center
+h3.oss
+  a href='https://github.com/chirpradio/command-center/' CHIRP Radio Command Center
+.row
+  .col.s12.m6
+    img.responsive-img src='chirp-music.png'
+  .col.s12.m6
     p Web interface for running command line programs for managing the music collection of a nonprofit radio station.
 
-.card
-  .card-image
-    img src='muffin-playground.png'
-  .card-content
-    span.card-title
-      a href='https://github.com/feihong/muffin-playground' muffin-playground
-    p A small module containing convenience classes to make it easier to create simple asyncio-based web applications. Includes support for Python-like preprocessors like Plim, RapydScript, and Stylus.
+h3.oss
+  a href='https://github.com/feihong/muffin-playground' muffin-playground
+.row
+  .col.s12.m6
+    img.responsive-img src='muffin-playground-websocket.png'
+  .col.s12.m6
+    p A small module containing convenience classes to make it easier to create simple asyncio-based web applications. Includes support for Pythonic preprocessors like Plim, RapydScript, and Stylus.
 
 h2 Education
 
