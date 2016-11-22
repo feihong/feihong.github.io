@@ -46,8 +46,9 @@ def build(ctx):
     clean(ctx)
     for src in Path('site').rglob('*?.*'):
         dest = Path('build') / src.relative_to('site')
-        dest = copy_or_generate(src, dest)
-        print(dest)
+        dest2 = copy_or_generate(src, dest)
+        if dest2:
+            print(dest2)
 
 
 @task
@@ -64,7 +65,7 @@ def serve_build(ctx):
 @task
 def publish(ctx):
     build(ctx)
-    run('ghp-import -n -p build')
+    ctx.run('ghp-import -n -p -b master build')
 
 
 def copy_or_generate(src, dest):
@@ -72,7 +73,9 @@ def copy_or_generate(src, dest):
     if not dest.exists():
         dest.parent.mkdir(parents=True, exist_ok=True)
 
-    if src.suffix == '.plim' and not src.name.startswith('_'):
+    if src.suffix == '.plim':
+        if src.name.startswith('_'):
+            return None
         dest_html = dest.with_suffix('.html')
         with dest_html.open('w') as fp:
             html = render(str(src.relative_to('site')))
