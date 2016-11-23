@@ -3,7 +3,24 @@ Feihong Hsu
 </title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"/>
 
-<link rel="stylesheet" href="styles.css"/>
+<style>h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+h3.oss {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+img {
+  border: 1px dashed gray;
+}
+/* Make sure [View *] links do not wrap */
+a[target], a[data-id] {
+  white-space: nowrap;
+}
+
+</style>
 </head><body class="container"><!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
@@ -11,7 +28,7 @@ Feihong Hsu
 
 
 <h1>
-Feihong Hsu</h1><ul><li>Chicago, IL</li><li><a href="https://github.com/feihong">GitHub</a></li><li><a href="http://omegafeihong.tumblr.com/">Blog</a></li><li><a href="http://feihonghsu.com">Web site</a></li><li><a href="http://www.linkedin.com/in/feihonghsu">LinkedIn</a></li></ul><h2>Who</h2><p><p>I am a freelance Django developer with more than a decade of Python experience and a strong foundation in JavaScript programming. Besides fullstack web development, my specialties are web scraping and geospatial programming. My hobbies include reading comics, learning Chinese, drawing, and dragon boat racing.</p></p><h2>Experience</h2><h3>Freelance, June 2013 to present</h3>
+Feihong Hsu</h1><ul><li>Chicago, IL</li><li><a href="https://github.com/feihong">GitHub</a></li><li><a href="http://omegafeihong.tumblr.com/">Blog</a></li><li><a href="http://feihonghsu.com">Web site</a></li><li><a href="http://www.linkedin.com/in/feihonghsu">LinkedIn</a></li></ul><h2>Who</h2><p>I am a freelance Django developer with more than a decade of Python experience and a strong foundation in JavaScript programming. Besides fullstack web development, my specialties are web scraping and geospatial programming. My hobbies include reading comics, learning Chinese, drawing, and dragon boat racing.</p><h2>Experience</h2><h3>Freelance, June 2013 to present</h3>
 
 <p>I have helped a number of clients with their Python and JavaScript web development needs. On the odd occasion I've also done iOS work in Objective-C.</p>
 
@@ -25,7 +42,8 @@ Feihong Hsu</h1><ul><li>Chicago, IL</li><li><a href="https://github.com/feihong"
 
 <h3><a href="http://morningstar.com">Morningstar</a>, August 2005 to January 2008</h3>
 
-<p>I worked on an ASP.NET app to extract data from a SQL Server database and display it as XML to end users. I also created a Python command line program to generate hundreds of T-SQL queries, ushering in the official use of Python at the company.</p><h2>Talks</h2><h3><a href="https://github.com/feihong/asyncio-tasks-talk">Using Tasks in Your Asyncio Web App</a>, September 2016</h3>
+<p>I worked on an ASP.NET app to extract data from a SQL Server database and display it as XML to end users. I also created a Python command line program to generate hundreds of T-SQL queries, ushering in the official use of Python at the company.</p>
+<h2>Talks</h2><h3><a href="https://github.com/feihong/asyncio-tasks-talk">Using Tasks in Your Asyncio Web App</a>, September 2016</h3>
 
 <p>I cover how to implement different types of tasks in an asyncio-based web application, including how to start them, stop them, and send incremental data to a web frontend using websockets. I also spend a little time reviewing asyncio concepts. <a href='#' data-id='f5629eccb188434fbd4baf315a5de5df' data-embed-type='speakerdeck'>[View slides]</a></p>
 
@@ -47,7 +65,8 @@ Feihong Hsu</h1><ul><li>Chicago, IL</li><li><a href="https://github.com/feihong"
 
 <h3><a href="https://github.com/feihong/framework-tutorial">Secrets of the Framework Creators</a>, March 2008</h3>
 
-<p>A PyCon tutorial that covers advanced language features that commonly appear in the codebases of popular Python frameworks. We go over the syntax and usage of frame hacks, magic methods, decorators, and metaclasses. There are examples and exercises for tutorial participants. <a href='http://feihong.github.io/framework-tutorial/' target='_blank'>[View tutorial]</a></p><h2>Open Source Projects</h2><h3 class="oss"><a href="https://github.com/ChickTech/mobile-app-tutorial">Mobile App Tutorial</a></h3><div class="row"><div class="col s12 m6"><img src="mobile-app-tutorial-small.png" class="responsive-img"/></div><div class="col s12 m6"><p><a href="http://appinventor.mit.edu/">App Inventor</a> tutorial made for the <a href="http://chicktech.github.io/mobile-app-tutorial/">ChickTech Mobile App Workshop</a>. Shows high school students how to create basic Android apps that make use of the camera, GPS, networking, QR code scanning. There is even a bonus chapter on setting up a basic web app on <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>. <a href='http://chicktech.github.io/mobile-app-tutorial/' target='_blank'>[View tutorial]</a></p></div></div><h3 class="oss"><a href="https://github.com/chirpradio/command-center/">CHIRP Radio Command Center</a></h3><div class="row"><div class="col s12 m6"><img src="chirp-music.png" class="responsive-img"/></div><div class="col s12 m6"><p>Web interface for running command line programs for managing the music collection of a nonprofit radio station.</p></div></div><h3 class="oss"><a href="https://github.com/feihong/muffin-playground">muffin-playground</a></h3><div class="row"><div class="col s12 m6"><img src="muffin-playground-websocket.png" class="responsive-img"/></div><div class="col s12 m6"><p>A small module containing convenience classes to make it easier to create simple asyncio-based web applications. Includes support for Pythonic preprocessors like Plim, RapydScript, and Stylus.</p></div></div><h2>Education</h2><ul>
+<p>A PyCon tutorial that covers advanced language features that commonly appear in the codebases of popular Python frameworks. We go over the syntax and usage of frame hacks, magic methods, decorators, and metaclasses. There are examples and exercises for tutorial participants. <a href='http://feihong.github.io/framework-tutorial/' target='_blank'>[View tutorial]</a></p>
+<h2>Open Source Projects</h2><h3 class="oss"><a href="https://github.com/ChickTech/mobile-app-tutorial">Mobile App Tutorial</a></h3><div class="row"><div class="col s12 m6"><img src="mobile-app-tutorial-small.png" class="responsive-img"/></div><div class="col s12 m6"><p><a href="http://appinventor.mit.edu/">App Inventor</a> tutorial made for the <a href="http://chicktech.github.io/mobile-app-tutorial/">ChickTech Mobile App Workshop</a>. Shows high school students how to create basic Android apps that make use of the camera, GPS, networking, QR code scanning. There is even a bonus chapter on setting up a basic web app on <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>. <a href='http://chicktech.github.io/mobile-app-tutorial/' target='_blank'>[View tutorial]</a></p></div></div><h3 class="oss"><a href="https://github.com/chirpradio/command-center/">CHIRP Radio Command Center</a></h3><div class="row"><div class="col s12 m6"><img src="chirp-music.png" class="responsive-img"/></div><div class="col s12 m6"><p>Web interface for running command line programs for managing the music collection of a nonprofit radio station.</p></div></div><h3 class="oss"><a href="https://github.com/feihong/muffin-playground">muffin-playground</a></h3><div class="row"><div class="col s12 m6"><img src="muffin-playground-websocket.png" class="responsive-img"/></div><div class="col s12 m6"><p>A small module containing convenience classes to make it easier to create simple asyncio-based web applications. Includes support for Pythonic preprocessors like Plim, RapydScript, and Stylus.</p></div></div><h2>Education</h2><ul>
 <li>MS in <a href="https://www.cs.uic.edu/">Computer Science from University of Illinois at Chicago</a></li>
 <li>BS in <a href="https://cs.illinois.edu/">Computer Science from University of Illinois at Urbana-Champaign</a></li>
 </ul>
@@ -55,6 +74,26 @@ Feihong Hsu</h1><ul><li>Chicago, IL</li><li><a href="https://github.com/feihong"
 </script><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js">
 </script>
 
-<script src="script.js">
+<script>'use strict';
+
+$('a[data-embed-type]').on('click', function(evt) {
+  evt.preventDefault()
+  var anchor = $(evt.target)
+  var dataId = anchor.data('id')
+  var parent = anchor.parent()
+  var embedType = anchor.data('embed-type')
+  if (embedType === 'speakerdeck' && parent.find('div').length === 0) {
+    var node = $(document.createElement('script'))
+    node.addClass('speakerdeck-embed')
+    node.attr('data-id', dataId)
+    node.attr('data-ratio', '1.77777777777778')
+    node.attr('src', "//speakerdeck.com/assets/embed.js")
+    node.appendTo(parent)
+  } else if (embedType === 'youtube' && parent.find('iframe').length === 0) {
+    var node = $(`<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/${dataId}" frameborder="0" allowfullscreen></iframe></div>`)
+    node.appendTo(parent)
+  }
+});
+
 </script>
 </body></html>
