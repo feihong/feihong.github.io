@@ -1,4 +1,7 @@
 from pathlib import Path
+from functools import partial
+import html
+
 from mako.template import Template
 from mako.lookup import TemplateLookup
 from plim import preprocessor
@@ -9,8 +12,10 @@ from invoke import task
 app = Flask(__name__)
 lookup = TemplateLookup(
     directories=['site'],
-    preprocessor=preprocessor)
-site = Path(__file__).parent / 'site'
+    preprocessor=preprocessor,
+    strict_undefined=True)
+template_context = dict()
+site = Path('site')
 
 
 @app.route('/', defaults={'path': ''})
@@ -33,7 +38,11 @@ def render(tmpl_file, **kwargs):
     if not isinstance(tmpl_file, str):
         tmpl_file = str(tmpl_file)
     tmpl = lookup.get_template(tmpl_file)
-    return tmpl.render(**kwargs)
+    ctx = template_context.copy()
+    ctx.update(
+        inline_file=partial(inline_file, (site / tmpl_file).parent),
+        **kwargs)
+    return tmpl.render(**ctx)
 
 
 @task
@@ -78,9 +87,15 @@ def copy_or_generate(src, dest):
             return None
         dest_html = dest.with_suffix('.html')
         with dest_html.open('w') as fp:
-            html = render(str(src.relative_to('site')))
+            html = render(str(src.relative_to(site)))
             fp.write(html)
         return dest_html
     else:
         shutil.copy(str(src), str(dest))
         return dest
+
+
+def inline_file(parent, path):
+    filepath = parent / path
+    content = filepath.read_text()
+    return content

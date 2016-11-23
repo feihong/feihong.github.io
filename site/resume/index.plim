@@ -4,10 +4,10 @@
   Feihong Hsu
 
 -block extrahead
-  link rel='stylesheet' href='styles.css'
+  style ${inline_file('styles.css')}
 
 -block extrascript
-  script src='script.js'
+  script ${inline_file('script.js')}
 
 h1 = title()
 
