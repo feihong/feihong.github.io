@@ -7,6 +7,7 @@ from mako.lookup import TemplateLookup
 from plim import preprocessor
 from flask import Flask, send_from_directory
 from invoke import task
+import markdown2
 
 
 app = Flask(__name__)
@@ -98,4 +99,6 @@ def copy_or_generate(src, dest):
 def inline_file(parent, path):
     filepath = parent / path
     content = filepath.read_text()
+    if filepath.suffix == '.md':
+        content = markdown2.markdown(content)
     return content
