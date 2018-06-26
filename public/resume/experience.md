@@ -1,6 +1,6 @@
 ### Freelance, June 2013 to present
 
-I have helped a number of clients with their Python and JavaScript web development needs. On the odd occasion I've also done iOS work in Objective-C.
+I help clients make websites, usually using Python and JavaScript. On the odd occasion I've also done iOS work in Objective-C.
 
 ### [EveryBlock](http://everyblock.com), September 2011 to Februrary 2013
 
