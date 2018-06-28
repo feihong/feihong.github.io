@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "clean": "rm public/**/*.html",
+    "clean": "find public -name '*.html' -type f -delete",
     "dev": "yarn clean && nodemon server.js",
     "build": "node scripts/build.js",
     "serve-static": "yarn build && cd public && python3 -m http.server",
@@ -22,6 +22,7 @@
     "pug": "^2.0.3"
   },
   "devDependencies": {
+    "dotenv": "^6.0.0",
     "gh-pages": "^1.2.0",
     "glob": "^7.1.2"
   }
