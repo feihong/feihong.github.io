@@ -5,3 +5,6 @@ body {
 ul a {
   color: #aaa;
 }
+ul a:hover {
+  text-decoration: underline;
+}
