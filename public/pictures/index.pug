@@ -1,4 +1,4 @@
-extends base.pug
+extends ../base.pug
 
 block title
   | Pictures
@@ -10,6 +10,9 @@ block extrahead
     }
     .picture img {
       border: 1px solid lightgray;
+    }
+    .see-more {
+      margin-bottom: 2rem;
     }
 
 block content
@@ -37,6 +40,6 @@ block content
     each img in images
       div.picture
         img(src=img)
-  hr
-  p
-    a(href='http://megafeihong.tumblr.com/') See more on Tumblr →
+  
+  div.see-more
+    a.waves-effect.waves-light.btn(href='http://megafeihong.tumblr.com/') See more on Tumblr →
