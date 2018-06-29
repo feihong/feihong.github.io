@@ -6,6 +6,7 @@ Deployed to:
 
 - https://feihong.github.io
 - https://feihong.glitch.me/
+- https://feihonghsu.com
 
 ## Prerequisites
 
@@ -14,7 +15,7 @@ Deployed to:
 
 ## Commands
 
-Start server on production
+Start server on production (when deployed to Glitch)
 
     npm start
 
