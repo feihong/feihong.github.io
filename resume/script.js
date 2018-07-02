@@ -12,10 +12,10 @@ function toggleSlides(anchor, parent) {
       'src': '//speakerdeck.com/assets/embed.js',
     })
     scriptEl.appendTo(parent)
-    anchor.text('[Hide slides]')
+    anchor.text('Hide slides')
   } else {
     parent.find('.speakerdeck-embed-wrapper').remove()
-    anchor.text('[View slides]')
+    anchor.text('View slides')
   }
 }
 
@@ -28,10 +28,10 @@ function toggleVideo(anchor, parent) {
         frameborder="0" allowfullscreen>
       </iframe></div>`)
      videoEl.appendTo(parent)
-     anchor.text('[Hide video]')
+     anchor.text('Hide video')
    } else {
      parent.find('.video-container').remove()
-     anchor.text('[View video]')
+     anchor.text('View video')
    }
 }
 
