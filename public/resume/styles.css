@@ -17,3 +17,14 @@ img {
 a[target], a[data-id] {
   white-space: nowrap;
 }
+.view {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  background-color: #ececec;
+  color: #999;
+  font-size: 0.8rem;
+}
+.speakerdeck-embed-wrapper, .video-container {
+  margin-top: 0.5rem;
+}
